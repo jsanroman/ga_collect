@@ -7,7 +7,6 @@ module GaCollect
       raise ArgumentError, 'action is required'    if options[:ea].nil? || options[:ea].empty?
 
       params = {ec: '', ea: '', el: '', ev: ''}.merge(options)
-      params.merge!({t: :event})
 
       GaCollect::HTTP.get(params)
     end
