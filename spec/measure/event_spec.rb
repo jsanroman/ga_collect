@@ -12,13 +12,13 @@ describe "GaCollect::Measure.event" do
   end
 
   it 'event sucess' do
-    response = @tracker.event(ec: 'ga_collect', ea: 'test2', ev: 1)
+    response = @tracker.event(ec: 'ga_collect', ea: 'test2', ev: 1, cid: 'client_id')
 
     expect(response.code).to eq('200')
   end
 
   it 'refund an entire transaction' do
-    response = @tracker.event(ec: 'Ecommerce', ea: 'Refund', ni: 1, ti: '234234', pa: 'refund')
+    response = @tracker.event(ec: 'Ecommerce', ea: 'Refund', ni: 1, ti: '234234', pa: 'refund', cid: 'client_id')
 
     expect(response.code).to eq('200')
   end

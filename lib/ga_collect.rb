@@ -3,22 +3,21 @@ require "ga_collect/version"
 module GaCollect
   MEASURES = [:pageview, :event, :transaction, :item, :social, :exception, :timing, :screenview]
 
-  def self.tracker(tracking_id = nil)
+  def self.tracker(tracking_id = nil, version=1)
     raise ArgumentError, 'tracking_id is required' if tracking_id.empty?
-    GaCollect::Tracker.new(tracking_id)
+    GaCollect::Tracker.new(tracking_id, version)
   end
 
   class Tracker
-    def initialize(tracking_id, client_id=555, version=1)
+    def initialize(tracking_id, version=1)
       @tracking_id = tracking_id
-      @client_id   = client_id
       @version     = version
     end
 
 
     GaCollect::MEASURES.each do |method|
       define_method(method) do |argument|
-        options = argument.merge({v: @version, tid: @tracking_id, cid: @client_id, t: method})
+        options = argument.merge({v: @version, tid: @tracking_id, t: method})
 
         GaCollect::Measure.send(method, options)
       end

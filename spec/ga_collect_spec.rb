@@ -9,4 +9,7 @@ describe GaCollect do
     expect{ GaCollect.tracker('') }.to raise_error(ArgumentError)
   end
 
+  it 'with tracker_id and verion' do
+    tracker = GaCollect.tracker('test', 1)
+  end
 end

@@ -10,7 +10,7 @@ describe "GaCollect::Measure.transaction" do
   end
 
   it 'transaction success' do
-    response = @tracker.transaction(ti: 123, ta: '', tr: 10, ts: 0, tt: 0, cu: 'EUR')
+    response = @tracker.transaction(ti: 123, ta: '', tr: 10, ts: 0, tt: 0, cu: 'EUR', cid: 'client_id')
 
     expect(response.code).to eq('200')
   end

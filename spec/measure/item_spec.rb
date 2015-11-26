@@ -10,7 +10,7 @@ describe "GaCollect::Measure.item" do
   end
 
   it 'item success' do
-    response = @tracker.item(ti: 123, in: 'test', ip: '10', iq: 2, ic: '12345', iv: 'ga_collect')
+    response = @tracker.item(ti: 123, in: 'test', ip: '10', iq: 2, ic: '12345', iv: 'ga_collect', cid: 'client_id')
 
     expect(response.code).to eq('200')
   end

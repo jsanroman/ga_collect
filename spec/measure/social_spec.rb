@@ -22,7 +22,7 @@ describe "GaCollect::Measure.social" do
   end
 
   it 'social success' do
-    response = @tracker.social(sa: 'like', sn: 'facebook', st: '/home')
+    response = @tracker.social(sa: 'like', sn: 'facebook', st: '/home', cid: 'client_id')
 
     expect(response.code).to eq('200')
   end
