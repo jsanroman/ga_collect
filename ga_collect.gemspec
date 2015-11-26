@@ -6,6 +6,9 @@ require 'ga_collect/version'
 Gem::Specification.new do |spec|
   spec.name          = 'ga_collect'
   spec.version       = GaCollect::VERSION
+  spec.platform      = Gem::Platform::RUBY
+  spec.required_ruby_version = '>= 1.9'
+
   spec.licenses      = ["MIT"]
   spec.authors       = ["Javi Sanromán"]
   spec.email         = ["javisanroman@gmail.com"]
