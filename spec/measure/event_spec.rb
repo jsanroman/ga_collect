@@ -16,4 +16,10 @@ describe "GaCollect::Measure.event" do
 
     expect(response.code).to eq('200')
   end
+
+  it 'refund an entire transaction' do
+    response = @tracker.event(ec: 'Ecommerce', ea: 'Refund', ni: 1, ti: '234234', pa: 'refund')
+
+    expect(response.code).to eq('200')
+  end
 end
