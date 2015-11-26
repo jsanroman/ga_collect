@@ -13,8 +13,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Javi Sanromán"]
   spec.email         = ["javisanroman@gmail.com"]
 
-  spec.summary       = %q{GaCollect is a simple Ruby library which collects metrics on the server side and sends them to google analytics using its measurement protocol}
-  spec.description   = %q{GaCollect is a simple Ruby library which collects metrics on the server side and sends them to google analytics using its measurement protocol https://developers.google.com/analytics/devguides/collection/protocol/v1/devguide#usertiming}
+  spec.summary       = %q{A simple Ruby library which to collects metrics on the server side and sends them to google analytics using its measurement protocol}
+  spec.description   = %q{A simple Ruby library which to collects metrics on the server side and sends them to google analytics using its measurement protocol https://developers.google.com/analytics/devguides/collection/protocol/v1/devguide#usertiming}
   spec.homepage      = "https://github.com/jsanroman/ga_collect"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }

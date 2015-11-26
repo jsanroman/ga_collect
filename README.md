@@ -1,7 +1,6 @@
 # GaCollect [![Build Status](https://travis-ci.org/jsanroman/ga_collect.svg)](https://travis-ci.org/jsanroman/ga_collect)
 
-GaCollect is a simple Ruby library which collects metrics on the server side and sends them to google analytics using its measurement protocol https://developers.google.com/analytics/devguides/collection/protocol/v1/devguide#usertiming
-
+A simple Ruby library which to collects metrics on the server side and sends them to google analytics using its measurement protocol https://developers.google.com/analytics/devguides/collection/protocol/v1/devguide#usertiming
 
 ## Installation
 
