@@ -6,7 +6,7 @@ module GaCollect
       raise ArgumentError, 'category is required'  if options[:ec].nil? || options[:ec].empty?
       raise ArgumentError, 'action is required'    if options[:ea].nil? || options[:ea].empty?
 
-      params = {ec: '', ea: '', el: '', ev: ''}.merge(options)
+      params = {ec: '', ea: '', el: '', ev: 0}.merge(options)
 
       GaCollect::HTTP.get(params)
     end
