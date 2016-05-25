@@ -1,4 +1,5 @@
 require "ga_collect/version"
+require 'logger'
 
 module GaCollect
   MEASURES = [:pageview, :event, :transaction, :item, :social, :exception, :timing, :screenview]
