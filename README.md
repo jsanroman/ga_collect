@@ -1,4 +1,9 @@
-# GaCollect [![Build Status](https://travis-ci.org/jsanroman/ga_collect.svg)](https://travis-ci.org/jsanroman/ga_collect)
+# GaCollect 
+
+[![Gem Version](https://badge.fury.io/rb/ga_collect.svg)](https://badge.fury.io/rb/ga_collect)
+[![Build Status](https://travis-ci.org/jsanroman/ga_collect.svg)](https://travis-ci.org/jsanroman/ga_collect)
+[![Test Coverage](https://codeclimate.com/github/jsanroman/ga_collect/badges/coverage.svg)](https://codeclimate.com/github/jsanroman/ga_collect/coverage)
+[![Code Climate](https://codeclimate.com/github/jsanroman/ga_collect/badges/gpa.svg)](https://codeclimate.com/github/jsanroman/ga_collect)
 
 A simple Ruby library which to collects metrics on the server side and sends them to google analytics using its measurement protocol https://developers.google.com/analytics/devguides/collection/protocol/v1/devguide#usertiming
 
